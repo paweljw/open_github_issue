@@ -1,0 +1,32 @@
+<div class="open-github-issue-show" onclick="openGithubIssueFormToggle()">
+  <span>&#9888;<span>
+</div>
+
+<div class="open-github-issue-form" id="open-github-issue-form">
+  <strong class="open-github-issue-header"><%= t('open_github_issue.header') %></strong>
+  <%= form_for :open_github_report, url: OpenGithubIssue::Engine.routes.url_helpers.report_path do |f| %>
+    <div class="open-github-issue-form-group">
+      <div class="open-github-issue-form-description">
+        <%= label :title, t('open_github_issue.title') %>
+      </div>
+      <div class="open-github-issue-form-text-input">
+        <%= f.text_field :title %>
+      </div>
+    </div>
+
+    <div class="open-github-issue-form-group">
+      <div class="open-github-issue-form-description">
+        <%= label :body, t('open_github_issue.body') %>
+      </div>
+      <div class="open-github-issue-form-text-area">
+        <%= f.text_area :body %>
+      </div>
+    </div>
+
+    <%= f.hidden_field :path, value: request.path %>
+
+    <div class="open-github-issue-form-submit">
+      <%= f.submit t('open_github_issue.submit') %>
+    </div>
+  <% end %>
+</div>

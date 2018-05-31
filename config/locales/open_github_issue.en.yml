@@ -1,0 +1,8 @@
+en:
+  open_github_issue:
+    header: Report an issue
+    title: Title
+    body: Description
+    submit: Submit
+    thanks: Thank you for submitting the issue!
+    error: Your issue could not be submitted at this time.

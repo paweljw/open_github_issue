@@ -1,0 +1,8 @@
+pl:
+  open_github_issue:
+    header: Zgłoś błąd
+    title: Tytuł
+    body: Treść
+    submit: Wyślij
+    thanks: Dziękujemy za zgłoszenie problemu!
+    error: W tej chwili nie można było wysłać zgłoszenia.

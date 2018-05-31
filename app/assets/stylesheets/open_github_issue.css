@@ -1,0 +1,73 @@
+/*
+ *= require_self
+ */
+
+.open-github-issue-form {
+  display: none;
+  width: 30%;
+  background: #fff;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 15px #666;
+}
+
+.open-github-issue-form.active {
+  display: block;
+}
+
+.open-github-issue-header {
+  font-size: 20px;
+}
+
+.open-github-issue-form.active {
+  display: block;
+}
+
+.open-github-issue-form-group .open-github-issue-form-text-area textarea {
+  width: 100%;
+}
+
+.open-github-issue-form-group .open-github-issue-form-text-input input {
+  width: 100%;
+}
+
+.open-github-issue-form-group, .open-github-issue-form-submit {
+  padding-top: 10px;
+}
+
+.open-github-issue-show {
+  width: 50px;
+  height: 50px;
+  background: #d9534f;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 25px;
+  border: 0px none;
+  box-shadow: 3px 3px 5px #666;
+  text-align: center;
+  cursor: pointer;
+}
+
+.open-github-issue-show span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+  margin: 15px auto;
+}
+
+.open-github-issue-show:hover span { 
+  -webkit-animation:open-github-issue-spin 1s ease;
+  -moz-animation:open-github-issue-spin 1s ease;
+  animation:open-github-issue-spin 1s ease;
+}
+
+@-moz-keyframes open-github-issue-spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes open-github-issue-spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes open-github-issue-spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
