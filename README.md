@@ -48,6 +48,11 @@ Or, if you're using SCSS:
 @import('open_github_issue');
 ```
 
+Finally, attach the form in your view:
+
+``` erb
+<%= open_github_issue_form %>
+```
 
 ## Configuration
 
@@ -110,9 +115,11 @@ as reference to customize behavior, e.g. redirects and flashes.
 
 ## TODO
 
-[ ] Proper specs
-[ ] Hook up CI (e.g. Travis CI)
-[ ] Hook up a linting service (e.g. CodeClimate)
+- [ ] Proper specs
+- [ ] Hook up CI (e.g. Travis CI)
+- [ ] Hook up a linting service (e.g. CodeClimate)
+- [ ] Drop unnecessary dev dependency on SQLite
+- [ ] Add generators
 
 ## License
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
